@@ -5,7 +5,6 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import TableHead from "@material-ui/core/TableHead";
 import TableBody from "@material-ui/core/TableBody";
-import get from "lodash/get";
 
 export const Record = ({ row }) => {
   if (Object.keys(row).lenght === 0) {

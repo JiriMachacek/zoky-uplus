@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import { Header, List, Record } from "./Components";
 import lodashSortBy from "lodash/sortBy";
 
-// const url = "https://api.zonky.cz/loans/marketplace"
+//const url = "https://api.zonky.cz/loans/marketplace";
 const url = "./market.json";
 const reloadInterval = 1000 * 60 * 5;
 
@@ -16,6 +16,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+    this.fetchData();
     this.setInterval();
   }
 
